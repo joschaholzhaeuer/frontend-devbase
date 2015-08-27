@@ -2,3 +2,24 @@
 STYLESHEET: GRID
 
 ******************************************************************/
+
+.wrapper {
+    padding: 50px 5%;
+
+    &-inner {
+        max-width: 820px;
+        margin: 0 auto;
+    }
+}
+
+@include medium {
+    .wrapper {
+        padding: 70px 5%;
+    }
+}
+
+@include large {
+    .wrapper {
+        padding: 100px 20%;
+    }
+}

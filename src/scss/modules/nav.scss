@@ -1,0 +1,55 @@
+/******************************************************************
+STYLESHEET: NAV
+
+******************************************************************/
+
+.nav {
+    background-color: $black;
+    margin: 0;
+    font-family: $link-font;
+    @include fontsize-7;
+    text-transform: uppercase;
+
+    &-list {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-listitem {
+        display: inline-block;
+        width: 24%;
+    }
+
+    &-link {
+        display: inline-block;
+        text-decoration: none;
+        color: $white;
+        padding: $medium-padding $small-padding;
+    }
+}
+
+@include medium {
+    .nav {
+        @include fontsize-9;
+
+        &-listitem {
+            width: auto;
+        }
+
+        &-link {
+            min-width: 150px;
+        }
+    }
+}
+
+@include large {
+    .nav {
+        @include fontsize-10;
+
+        &-link {
+            min-width: 180px;
+        }
+    }
+}

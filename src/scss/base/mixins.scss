@@ -42,6 +42,15 @@ STYLESHEET: STYLE
 }
 
 // USAGE: @include fontsize-12;
+@mixin fontsize-7 {
+  @include font-size(7/10);
+}
+@mixin fontsize-8 {
+  @include font-size(8/10);
+}
+@mixin fontsize-9 {
+  @include font-size(9/10);
+}
 @mixin fontsize-10 {
   @include font-size(10/10);
 }

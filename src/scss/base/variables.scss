@@ -10,40 +10,40 @@ This is the place for all variables.
 ******************************************************************/
 
 // COLORS
-$white:  #fff;
-$black:  #000;
-$grey:   #e1e2e5;
+$white:      #fff;
+$black:      #23272b;
+$grey:       #e1e2e5;
+$grey-light: #f9f9f9;
 
-$dark-bg:   $black;
-$medium-bg: $grey;
-$light-bg:  $white;
-
-$base-color: $white;
+$red:    #d75056;
+$blue:   #4d97cd;
+$purple: #6f528b;
+$cyan:   #50ab9e;
 
 
 // FONTS
 $merriweathersans: 'Merriweather Sans', 'Helvetica', 'Arial', 'sans-serif';
-$merriweather: 'Merriweather', 'Helvetica', 'Arial', 'sans-serif';
+$lato: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+$opensans: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 
-$base-font:    $merriweather;
+$base-font:    $opensans;
 $heading-font: $merriweathersans;
 $link-font:    $merriweathersans;
-$text-font:    $merriweather;
+$text-font:    $opensans;
 
 
 // BREAKPOINTS
-$small-width:  681px;
-$medium-width: 961px;
+$medium-width: 641px;
 $large-width:  1361px;
 
 
 // MARGINS
-$small-margin: 0.5em;
-$medium-margin: 1em;
-$large-margin: 3em;
+$small-margin: 10px;
+$medium-margin: 30px;
+$large-margin: 50px;
 
 
 // PADDINGS
-$small-padding: 0.5em;
-$medium-padding: 1em;
-$large-padding: 3em;
+$small-padding: 10px;
+$medium-padding: 30px;
+$large-padding: 50px;
