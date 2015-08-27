@@ -33,7 +33,7 @@ hr {
     height: 0;
     border: 0;
     border-top: 2px solid $grey-light;
-    margin: 1em 0;
+    margin: $small-margin 0;
     padding: 0;
 }
 
@@ -54,4 +54,8 @@ fieldset {
 
 textarea {
     resize: vertical;
+}
+
+aside {
+    position: relative;
 }

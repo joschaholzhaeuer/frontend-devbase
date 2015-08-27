@@ -36,19 +36,29 @@
             </section>
         </header>
 
-        <aside class="sidenav">
-            <ul class="sidenav-list">
-                <li class="sidenav-listitem"><a href="#" class="sidenav-link"></a></li>
-                <li class="sidenav-listitem"><a href="" class="sidenav-link"></a></li>
-                <li class="sidenav-listitem"><a href="" class="sidenav-link"></a></li>
-                <li class="sidenav-listitem"><a href="" class="sidenav-link"></a></li>
-                <li class="sidenav-listitem"><a href="" class="sidenav-link"></a></li>
-                <li class="sidenav-listitem"><a href="" class="sidenav-link"></a></li>
-            </ul>
-        </aside>
-
         <article class="wrapper">
-            <section id="sublime" class="wrapper-inner">
+            <aside class="wrapper-inner">
+                <nav class="sidenav">
+                    <ul class="sidenav-list">
+                        <li class="sidenav-listitem"><a href="#section1" class="sidenav-link">Sublime Text</a>
+                            <ul class="sidenav-list sidenav-list--small">
+                                <li><a class="sidenav-link" href="">Packages</a></li>
+                                <li><a class="sidenav-link" href="">Color Scheme</a></li>
+                                <li><a class="sidenav-link" href="">Shortcuts</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="sidenav-listitem"><a href="" class="sidenav-link">Mamp</a></li>
+                        <hr>
+                        <li class="sidenav-listitem"><a href="" class="sidenav-link">Git</a></li>
+                        <hr>
+                        <li class="sidenav-listitem"><a href="" class="sidenav-link">Grunt</a></li>
+                        <hr>
+                        <li class="sidenav-listitem"><a href="" class="sidenav-link">Boilerplate</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section id="section1" class="wrapper-inner">
                 <h2>Sublime Text</h2>
                 <h3>Packages</h3>
                 <h4 class="text-red">Sublime Linter</h4>
@@ -56,8 +66,26 @@
                 <h4 class="text-red">Bracket Highlighter</h4>
                 <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 <h3>Shortcuts</h3>
+                <div class="codeblock">
+                    <div class="codeblock-row">
+                        <p class="codeblock-code codeblock-code--short codeblock-code--red">Strg + Shift + D</p>
+                        <p class="codeblock-code codeblock-code--wide lastitem">Copy and paste the current line</p>
+                    </div>
+                    <div class="codeblock-row">
+                        <p class="codeblock-code codeblock-code--short codeblock-code--red">Strg + Shift + G</p>
+                        <p class="codeblock-code codeblock-code--wide lastitem">Wrap the current selection with an HTML-Tag</p>
+                    </div>
+                    <div class="codeblock-row">
+                        <p class="codeblock-code codeblock-code--short codeblock-code--red">Alt + .</p>
+                        <p class="codeblock-code codeblock-code--wide lastitem">Close the preceding open tag</p>
+                    </div>
+                </div>
             </section>
         </article>
+
+        <footer class="footer">
+            <p class="text text-footer">&copy; Made with love by Joscha Holzhaeuer</p>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

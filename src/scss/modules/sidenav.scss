@@ -2,3 +2,42 @@
 STYLESHEET: NAV
 
 ******************************************************************/
+
+.sidenav {
+    display: none;
+}
+
+@include large {
+    .sidenav {
+        display: block;
+        position: absolute;
+        left: -250px;
+        font-family: $link-font;
+        color: $grey;
+
+        &-list {
+            @include fontsize-12;
+            margin-top: $small-margin;
+            padding-left: 0;
+            list-style-type: none;
+
+            &--small {
+                @include fontsize-10;
+                padding-left: $medium-padding;
+                margin-top: $small-margin;
+                margin-bottom: $medium-margin;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $grey;
+            display: block;
+            margin: $small-margin 0;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}

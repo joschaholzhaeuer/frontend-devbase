@@ -25,11 +25,13 @@ $cyan:   #50ab9e;
 $merriweathersans: 'Merriweather Sans', 'Helvetica', 'Arial', 'sans-serif';
 $lato: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
 $opensans: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+$firamono: 'Fira Mono', 'Courier New', 'Consolas', 'monospace';
 
 $base-font:    $opensans;
 $heading-font: $merriweathersans;
 $link-font:    $merriweathersans;
 $text-font:    $opensans;
+$code-font:    $firamono;
 
 
 // BREAKPOINTS

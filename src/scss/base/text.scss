@@ -35,6 +35,7 @@ h1 {
 
 h2 {
     margin-bottom: $small-margin;
+    margin-top: 0;
 }
 
 @include medium {
@@ -50,7 +51,7 @@ h2 {
 }
 
 h3 {
-    margin-bottom: $small-margin;
+    margin-bottom: $medium-margin;
     margin-top: $medium-margin;
 }
 
@@ -68,18 +69,12 @@ h3 {
 
 h4 {
     margin-bottom: $small-margin;
-    margin-top: $medium-margin;
+    margin-top: $small-margin;
 }
 
 @include medium {
     h4 {
         @include fontsize-12;
-    }
-}
-
-@include large {
-    h4 {
-        @include fontsize-14;
     }
 }
 
@@ -103,14 +98,8 @@ p {
     }
 }
 
-@include large {
-    p {
-        @include fontsize-14;
-    }
-}
-
 .text {
-    padding-bottom: $small-padding;
+    margin-bottom: $small-padding;
 
     &-red {
         color: $red;
@@ -126,5 +115,32 @@ p {
 
     &-cyan {
         color: $cyan;
+    }
+
+    &-footer {
+        padding-top: $medium-padding;
+        padding-bottom: $medium-padding;
+        font-family: $link-font;
+        @include fontsize-7;
+    }
+}
+
+@include medium {
+    .text {
+        margin-bottom: $medium-margin;
+
+        &-footer {
+            @include fontsize-9;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include large {
+    .text {
+
+        &-footer {
+            @include fontsize-10;
+        }
     }
 }

@@ -1,0 +1,62 @@
+/******************************************************************
+STYLESHEET: CODE
+
+******************************************************************/
+
+.codeblock {
+
+    &-row {
+        margin-bottom: $medium-margin;
+    }
+
+    &-code {
+        font-family: $code-font;
+        background-color: $grey-light;
+        padding: 15px 20px;
+        display: block;
+        width: 100%;
+        @include fontsize-8;
+
+
+        &--red {
+            color: $red;
+        }
+    }
+}
+
+@include medium {
+    .codeblock {
+        display: table;
+        width: 100%;
+
+        &-row {
+            margin-bottom: 0;
+            display: table-row;
+            width: 100%;
+        }
+
+        &-code {
+            display: table-cell;
+
+            &--short {
+                width: 30%;
+                border-right: $small-margin solid $white;
+                border-bottom: $small-margin solid $white;
+            }
+
+            &--wide {
+                width: 70%;
+                border-bottom: $small-margin solid $white;
+            }
+        }
+    }
+}
+
+@include large {
+    .codeblock {
+
+        &-code {
+            @include fontsize-10;
+        }
+    }
+}
