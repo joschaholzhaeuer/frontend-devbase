@@ -1,0 +1,24 @@
+/******************************************************************
+STYLESHEET: HELPERS
+
+******************************************************************/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.lastitem {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.firstitem {
+    margin-top: 0;
+    margin-left: 0;
+}

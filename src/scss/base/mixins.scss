@@ -1,0 +1,80 @@
+/******************************************************************
+STYLESHEET: STYLE
+
+    > BREAKPOINTS
+    > TYPOGRAPHY
+
+******************************************************************/
+
+
+// BREAKPOINTS
+
+// USAGE: @include medium {...};
+@mixin medium {
+    @media only screen and (min-width: #{$medium-width}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: #{$large-width}) {
+        @content;
+    }
+}
+
+
+// TYPOGRAPHY
+
+// USAGE: @include font-size(16/10);
+@mixin font-size($sizeValue: 16/10) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin line-height($sizeValue: 16/10) {
+  line-height: ($sizeValue * 10) + px;
+  line-height: $sizeValue + rem;
+}
+
+@mixin letter-spacing($sizeValue: 16/10) {
+  letter-spacing: ($sizeValue * 10) + px;
+  letter-spacing: $sizeValue + rem;
+}
+
+// USAGE: @include fontsize-12;
+@mixin fontsize-10 {
+  @include font-size(10/10);
+}
+@mixin fontsize-11 {
+  @include font-size(11/10);
+}
+@mixin fontsize-12 {
+  @include font-size(12/10);
+}
+@mixin fontsize-14 {
+  @include font-size(14/10);
+}
+@mixin fontsize-16 {
+  @include font-size(16/10);
+}
+@mixin fontsize-18 {
+  @include font-size(18/10);
+}
+@mixin fontsize-20 {
+  @include font-size(20/10);
+}
+@mixin fontsize-22 {
+  @include font-size(22/10);
+}
+@mixin fontsize-24 {
+  @include font-size(24/10);
+}
+@mixin fontsize-26 {
+  @include font-size(26/10);
+}
+@mixin fontsize-28 {
+  @include font-size(28/10);
+}
+@mixin fontsize-30 {
+  @include font-size(30/10);
+}

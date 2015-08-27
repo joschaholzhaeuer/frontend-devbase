@@ -1,0 +1,49 @@
+/******************************************************************
+STYLESHEET: VARIABLES
+
+    > COLORS
+    > FONTS
+    > BREAKPOINTS
+    > MARGINS_PADDINGS
+
+This is the place for all variables.
+******************************************************************/
+
+// COLORS
+$white:  #fff;
+$black:  #000;
+$grey:   #e1e2e5;
+
+$dark-bg:   $black;
+$medium-bg: $grey;
+$light-bg:  $white;
+
+$base-color: $white;
+
+
+// FONTS
+$merriweathersans: 'Merriweather Sans', 'Helvetica', 'Arial', 'sans-serif';
+$merriweather: 'Merriweather', 'Helvetica', 'Arial', 'sans-serif';
+
+$base-font:    $merriweather;
+$heading-font: $merriweathersans;
+$link-font:    $merriweathersans;
+$text-font:    $merriweather;
+
+
+// BREAKPOINTS
+$small-width:  681px;
+$medium-width: 961px;
+$large-width:  1361px;
+
+
+// MARGINS
+$small-margin: 0.5em;
+$medium-margin: 1em;
+$large-margin: 3em;
+
+
+// PADDINGS
+$small-padding: 0.5em;
+$medium-padding: 1em;
+$large-padding: 3em;
