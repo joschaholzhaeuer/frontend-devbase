@@ -6,7 +6,6 @@ STYLESHEET: DEFAULTS
 html {
     font-size: 1em;
     line-height: 1.4;
-    box-sizing: border-box;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 ::-moz-selection {

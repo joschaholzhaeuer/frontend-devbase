@@ -34,15 +34,53 @@ h1 {
 }
 
 h2 {
+    margin-bottom: $small-margin;
+}
 
+@include medium {
+    h2 {
+        @include fontsize-18;
+    }
+}
+
+@include large {
+    h2 {
+        @include fontsize-20;
+    }
 }
 
 h3 {
+    margin-bottom: $small-margin;
+    margin-top: $medium-margin;
+}
 
+@include medium {
+    h3 {
+        @include fontsize-14;
+    }
+}
+
+@include large {
+    h3 {
+        @include fontsize-16;
+    }
 }
 
 h4 {
+    margin-bottom: $small-margin;
+    margin-top: $medium-margin;
+}
 
+@include medium {
+    h4 {
+        @include fontsize-12;
+    }
+}
+
+@include large {
+    h4 {
+        @include fontsize-14;
+    }
 }
 
 h5 {
@@ -55,7 +93,7 @@ h6 {
 
 p {
     margin: 0;
-    padding-top: $medium-padding;
+    padding-top: 0;
     padding-bottom: 0;
 }
 
@@ -68,5 +106,25 @@ p {
 @include large {
     p {
         @include fontsize-14;
+    }
+}
+
+.text {
+    padding-bottom: $small-padding;
+
+    &-red {
+        color: $red;
+    }
+
+    &-blue {
+        color: $blue;
+    }
+
+    &-purple {
+        color: $purple;
+    }
+
+    &-cyan {
+        color: $cyan;
     }
 }
