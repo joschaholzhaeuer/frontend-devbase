@@ -35,7 +35,7 @@ h1 {
 
 h2 {
     margin-bottom: $small-margin;
-    margin-top: 0;
+    margin-top: $large-margin;
 }
 
 @include medium {
@@ -53,17 +53,12 @@ h2 {
 h3 {
     margin-bottom: $medium-margin;
     margin-top: $medium-margin;
+    color: $grey;
 }
 
 @include medium {
     h3 {
         @include fontsize-14;
-    }
-}
-
-@include large {
-    h3 {
-        @include fontsize-16;
     }
 }
 
@@ -99,7 +94,7 @@ p {
 }
 
 .text {
-    margin-bottom: $small-padding;
+    margin-bottom: $medium-margin;
 
     &-red {
         color: $red;
@@ -127,7 +122,6 @@ p {
 
 @include medium {
     .text {
-        margin-bottom: $medium-margin;
 
         &-footer {
             @include fontsize-9;

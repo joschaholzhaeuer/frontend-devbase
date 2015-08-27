@@ -21,10 +21,10 @@
 
         <nav class="nav">
             <ul class="nav-list wrapper-inner clearfix">
-                <li class="nav-listitem"><a class="nav-link" href="index.html">Setup</a></li>
-                <li class="nav-listitem"><a class="nav-link" href="resources.html">Resources</a></li>
-                <li class="nav-listitem"><a class="nav-link nav-link--purple" href="utilities.html">Utilities</a></li>
-                <li class="nav-listitem"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                <li class="nav-listitem"><a class="nav-link nav-link--purple" href="index.html">Setup</a></li>
+                <li class="nav-listitem"><a class="nav-link nav-link--purple" href="resources.html">Resources</a></li>
+                <li class="nav-listitem"><a class="nav-link nav-link--purple nav-link--purple--active" href="utilities.html">Utilities</a></li>
+                <li class="nav-listitem"><a class="nav-link nav-link--purple" href="blogs.html">Blogs</a></li>
             </ul>
         </nav>
 
@@ -35,6 +35,80 @@
                 <p class="heading-text">This is a collection of neat and useful utilities and tools I use to make a lot of things easier and way less time consuming.</p>
             </section>
         </header>
+
+        <article class="wrapper">
+            <aside class="wrapper-inner">
+                <nav class="sidenav sidenav-utilities">
+                    <ul class="sidenav-list">
+                        <li class="sidenav-listitem">
+                            <a href="#section1" class="sidenav-link">Typography</a>
+                            <ul class="sidenav-list sidenav-list--small">
+                                <li><a class="sidenav-link" href="">Webfonts</a></li>
+                                <li><a class="sidenav-link" href="">Tricks</a></li>
+                                <li><a class="sidenav-link" href="">Unicode</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="sidenav-listitem">
+                            <a href="" class="sidenav-link">Workflow</a>
+                            <ul class="sidenav-list sidenav-list--small">
+                                <li><a class="sidenav-link" href="">Frameworks</a></li>
+                                <li><a class="sidenav-link" href="">Libraries</a></li>
+                                <li><a class="sidenav-link" href="">CSS Preprocessors</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="sidenav-listitem">
+                            <a href="" class="sidenav-link">Icons &amp; Images</a>
+                            <ul class="sidenav-list sidenav-list--small">
+                                <li><a class="sidenav-link" href="">Icons</a></li>
+                                <li><a class="sidenav-link" href="">Images</a></li>
+                                <li><a class="sidenav-link" href="">Favicons</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="sidenav-listitem">
+                            <a href="" class="sidenav-link">Colors</a>
+                        </li>
+                        <hr>
+                        <li class="sidenav-listitem">
+                            <a href="" class="sidenav-link">Performance</a>
+                            <ul class="sidenav-list sidenav-list--small">
+                                <li><a class="sidenav-link" href="">Speed</a></li>
+                                <li><a class="sidenav-link" href="">SEO</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section id="section1" class="wrapper-inner">
+                <h2 class="firstitem">Sublime Text</h2>
+                <h3>Packages</h3>
+                <h4 class="text-purple">Sublime Linter</h4>
+                <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <h4 class="text-purple">Bracket Highlighter</h4>
+                <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <h3>Shortcuts</h3>
+                <div class="codeblock">
+                    <div class="codeblock-row">
+                        <p class="codeblock-code codeblock-code--short codeblock-code--purple">Strg + Shift + D</p>
+                        <p class="codeblock-code codeblock-code--wide lastitem">Copy and paste the current line</p>
+                    </div>
+                    <div class="codeblock-row">
+                        <p class="codeblock-code codeblock-code--short codeblock-code--purple">Strg + Shift + G</p>
+                        <p class="codeblock-code codeblock-code--wide lastitem">Wrap the current selection with an HTML-Tag</p>
+                    </div>
+                    <div class="codeblock-row">
+                        <p class="codeblock-code codeblock-code--short codeblock-code--purple">Alt + .</p>
+                        <p class="codeblock-code codeblock-code--wide lastitem">Close the preceding open tag</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer class="footer">
+            <p class="text text-footer">&copy; Made with love by Joscha Holzhaeuer</p>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

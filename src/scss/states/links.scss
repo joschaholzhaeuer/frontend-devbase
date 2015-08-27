@@ -3,35 +3,22 @@ STYLESHEET: LINKS
 
 ******************************************************************/
 
-a {
+.link {
+    color: inherit;
+    text-decoration: none;
 
     &:link {
-
+        color: inherit;
     }
 
     &:visited {
-
+        //color: $grey;
     }
 
     &:hover,
     &:focus,
     &:active {
-
+        color: inherit;
+        text-decoration: underline;
     }
-}
-
-.nav-listitem--red {
-    background-color: $red;
-}
-
-.nav-listitem--blue {
-    background-color: $blue;
-}
-
-.nav-listitem--purple {
-    background-color: $purple;
-}
-
-.nav-listitem--cyan {
-    background-color: $cyan;
 }

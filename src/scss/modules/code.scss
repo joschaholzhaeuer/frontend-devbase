@@ -17,9 +17,20 @@ STYLESHEET: CODE
         width: 100%;
         @include fontsize-8;
 
-
         &--red {
             color: $red;
+        }
+
+        &--blue {
+            color: $blue;
+        }
+
+        &--purple {
+            color: $purple;
+        }
+
+        &--cyan {
+            color: $cyan;
         }
     }
 }

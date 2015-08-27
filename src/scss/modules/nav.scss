@@ -32,42 +32,90 @@ STYLESHEET: NAV
 
         &::after {
             content: '';
-            transition: 0.5s ease-out;
+            transition: bottom 0.1s ease-in-out;
             width: 0;
             height: 0;
             position: absolute;
             left: 50%;
-            margin-left: -15px;
-            bottom: -1px;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
+            margin-left: -20px;
+            bottom: -10px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
         }
 
         &--red {
 
-            &::after {
-                border-bottom: 10px solid $red;
+            &:hover {
+
+                &::after {
+                    border-bottom: 10px solid $red;
+                    bottom: -1px;
+                }
+            }
+
+            &--active {
+
+                &::after {
+                    border-bottom: 10px solid $red;
+                    bottom: -1px;
+                }
             }
         }
 
         &--blue {
 
-            &::after {
-                border-bottom: 10px solid $blue;
+            &:hover {
+
+                &::after {
+                    border-bottom: 10px solid $blue;
+                    bottom: -1px;
+                }
+            }
+
+            &--active {
+
+                &::after {
+                    border-bottom: 10px solid $blue;
+                    bottom: -1px;
+                }
             }
         }
 
         &--purple {
 
-            &::after {
-                border-bottom: 10px solid $purple;
+            &:hover {
+
+                &::after {
+                    border-bottom: 10px solid $purple;
+                    bottom: -1px;
+                }
+            }
+
+            &--active {
+
+                &::after {
+                    border-bottom: 10px solid $purple;
+                    bottom: -1px;
+                }
             }
         }
 
         &--cyan {
 
-            &::after {
-                border-bottom: 10px solid $cyan;
+            &:hover {
+
+                &::after {
+                    border-bottom: 10px solid $cyan;
+                    bottom: -1px;
+                }
+            }
+
+            &--active {
+
+                &::after {
+                    border-bottom: 10px solid $cyan;
+                    bottom: -1px;
+                }
             }
         }
     }
