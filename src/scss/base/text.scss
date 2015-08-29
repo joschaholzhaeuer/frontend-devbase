@@ -96,6 +96,10 @@ p {
 .text {
     margin-bottom: $medium-margin;
 
+    &-pt {
+        margin-top: $medium-margin;
+    }
+
     &-red {
         color: $red;
     }

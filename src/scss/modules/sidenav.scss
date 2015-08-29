@@ -39,7 +39,12 @@ STYLESHEET: NAV
         &-setup {
 
             .sidenav-link {
+
                 &:hover {
+                    color: $red;
+                }
+
+                &.is-selected {
                     color: $red;
                 }
             }
@@ -48,7 +53,12 @@ STYLESHEET: NAV
         &-resources {
 
             .sidenav-link {
+
                 &:hover {
+                    color: $blue;
+                }
+
+                &.is-selected {
                     color: $blue;
                 }
             }
@@ -57,7 +67,12 @@ STYLESHEET: NAV
         &-utilities {
 
             .sidenav-link {
+
                 &:hover {
+                    color: $purple;
+                }
+
+                &.is-selected {
                     color: $purple;
                 }
             }
@@ -66,7 +81,12 @@ STYLESHEET: NAV
         &-blogs {
 
             .sidenav-link {
+
                 &:hover {
+                    color: $cyan;
+                }
+
+                &.is-selected {
                     color: $cyan;
                 }
             }
