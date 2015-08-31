@@ -34,8 +34,8 @@ h1 {
 }
 
 h2 {
-    margin-bottom: $small-margin;
-    margin-top: $large-margin;
+    margin-bottom: $medium-margin;
+    margin-top: 100px;
 }
 
 @include medium {
@@ -47,17 +47,26 @@ h2 {
 @include large {
     h2 {
         @include fontsize-20;
+        margin-top: 100px;
     }
 }
 
 h3 {
-    margin-bottom: $medium-margin;
-    margin-top: $medium-margin;
+    margin-bottom: $small-margin;
+    margin-top: $large-margin;
     color: $grey;
+
+    &::after {
+        content: "";
+        display: table;
+        width: 100%;
+        border-top: 2px solid $grey;
+    }
 }
 
 @include medium {
     h3 {
+        margin-bottom: $medium-margin;
         @include fontsize-14;
     }
 }
@@ -100,25 +109,26 @@ p {
         margin-top: $medium-margin;
     }
 
-    &-red {
+    &--red {
         color: $red;
     }
 
-    &-blue {
+    &--blue {
         color: $blue;
     }
 
-    &-purple {
+    &--purple {
         color: $purple;
     }
 
-    &-cyan {
+    &--cyan {
         color: $cyan;
     }
 
     &-footer {
         padding-top: $medium-padding;
         padding-bottom: $medium-padding;
+        margin-bottom: 0;
         font-family: $link-font;
         @include fontsize-7;
     }

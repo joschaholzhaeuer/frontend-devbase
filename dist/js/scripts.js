@@ -13,7 +13,10 @@ $(document).ready(function() {
         navigation         = $('.sidenav'),
         sectionFirst       = $('#section1');
 
-    updateNavigation();
+    if ( $(window).width() > 1361 ) {
+
+        updateNavigation();
+    }
 
     $(window).on('scroll', function(){
         updateNavigation();
@@ -32,7 +35,7 @@ $(document).ready(function() {
             $this = $(this);
             var activeSection = $('.sidenav a[href="#' + $this.attr('id') + '"]').data('number') - 1;
 
-            if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+            if ( ( $this.offset().top - 300 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - 300 > $(window).scrollTop() ) ) {
                 navigationItems.eq(activeSection).addClass('is-selected');
 
             } else {
