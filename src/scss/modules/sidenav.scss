@@ -14,11 +14,10 @@ STYLESHEET: NAV
         left: -30%;
         font-family: $link-font;
         color: $grey;
-        padding-top: 2px;
 
         &-list {
             @include fontsize-12;
-            margin-top: $small-margin;
+            margin-top: 0;
             padding-left: 0;
             list-style-type: none;
 

@@ -36,6 +36,9 @@ h1 {
 h2 {
     margin-bottom: $medium-margin;
     margin-top: 100px;
+    color: $white;
+    padding: $small-padding $medium-padding;
+    text-align: center;
 }
 
 @include medium {
@@ -60,7 +63,8 @@ h3 {
         content: "";
         display: table;
         width: 100%;
-        border-top: 2px solid $grey;
+        border-top: 2px solid $grey-light;
+        margin-top: $small-margin;
     }
 }
 
