@@ -1,0 +1,61 @@
+/******************************************************************
+STYLESHEET: BACKTOTOP
+
+******************************************************************/
+
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+
+    background: rgba($grey, 1) url(../../src/img/cd-top-arrow.svg) no-repeat center 50%;
+
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+
+    &.cd-is-visible, &.cd-fade-out, .no-touch &:hover {
+        -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+        -moz-transition: opacity .3s 0s, visibility 0s 0s;
+        transition: opacity .3s 0s, visibility 0s 0s;
+    }
+
+    &.cd-is-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.cd-fade-out {
+        visibility: visible;
+        opacity: 1;
+        background-color: $grey-light;
+        -webkit-transition: background-color .3s 0s, visibility 0s 0s;
+        -moz-transition: background-color .3s 0s, visibility 0s 0s;
+        transition: background-color .3s 0s, visibility 0s 0s;
+    }
+
+    .no-touch &:hover {
+        background-color: rgba($black, 1);
+        opacity: 1;
+    }
+}
+
+
+@include medium {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+    }
+}

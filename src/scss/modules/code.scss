@@ -6,6 +6,7 @@ STYLESHEET: CODE
 .codeblock {
     margin-top: $medium-margin;
     margin-bottom: $medium-margin;
+    width: 100%;
 
     &-row {
         border-bottom: $medium-margin solid $white;
@@ -16,7 +17,6 @@ STYLESHEET: CODE
         color: $grey-dark;
         padding: 15px 20px;
         display: block;
-        width: 100%;
         @include fontsize-9;
 
         &--red {
@@ -44,7 +44,6 @@ STYLESHEET: CODE
 @include medium {
     .codeblock {
         display: table;
-        width: 100%;
 
         &-row {
             border-bottom: 0;
@@ -54,6 +53,7 @@ STYLESHEET: CODE
 
         &-code {
             display: table-cell;
+            padding: 25px;
 
             &--short {
                 width: 30%;
