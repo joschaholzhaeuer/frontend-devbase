@@ -7,6 +7,7 @@ STYLESHEET: NAV
     background-color: $black;
     margin: 0;
     font-family: $link-font;
+    font-weight: bold;
     @include fontsize-7;
     text-transform: uppercase;
 

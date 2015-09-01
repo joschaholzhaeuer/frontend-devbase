@@ -4,18 +4,20 @@ STYLESHEET: CODE
 ******************************************************************/
 
 .codeblock {
+    margin-top: $medium-margin;
+    margin-bottom: $medium-margin;
 
     &-row {
-        margin-bottom: $medium-margin;
+        border-bottom: $medium-margin solid $white;
     }
 
     &-code {
-        font-family: $code-font;
         background-color: $grey-light;
+        color: $grey-dark;
         padding: 15px 20px;
         display: block;
         width: 100%;
-        @include fontsize-8;
+        @include fontsize-9;
 
         &--red {
             color: $red;
@@ -32,6 +34,10 @@ STYLESHEET: CODE
         &--cyan {
             color: $cyan;
         }
+
+        &--short {
+            font-family: $code-font;
+        }
     }
 }
 
@@ -41,7 +47,7 @@ STYLESHEET: CODE
         width: 100%;
 
         &-row {
-            margin-bottom: 0;
+            border-bottom: 0;
             display: table-row;
             width: 100%;
         }
@@ -58,16 +64,8 @@ STYLESHEET: CODE
             &--wide {
                 width: 70%;
                 border-bottom: $small-margin solid $white;
+                @include fontsize-10;
             }
-        }
-    }
-}
-
-@include large {
-    .codeblock {
-
-        &-code {
-            @include fontsize-10;
         }
     }
 }

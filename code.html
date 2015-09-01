@@ -41,64 +41,129 @@
                 <nav class="sidenav sidenav-code">
                     <ul class="sidenav-list">
                         <li class="sidenav-listitem">
-                            <a href="#section1" class="sidenav-link firstitem">HTML</a>
+                            <a href="#section1" class="sidenav-link sidenav-toplink firstitem" data-number="1">HTML</a>
                             <ul class="sidenav-list sidenav-list--small">
-                                <li><a class="sidenav-link" href="">HTML5 Tags</a></li>
-                                <li><a class="sidenav-link" href="">Tricks</a></li>
-                                <li><a class="sidenav-link" href="">Tutorials</a></li>
+                                <li><a class="sidenav-link" href="#html5tags">HTML5 Tags</a></li>
+                                <li><a class="sidenav-link" href="#html5tutorials">Tutorials</a></li>
                             </ul>
                         </li>
                         <hr>
                         <li class="sidenav-listitem">
-                            <a href="" class="sidenav-link">CSS</a>
+                            <a href="#section2" class="sidenav-link sidenav-toplink" data-number="2">CSS</a>
                             <ul class="sidenav-list sidenav-list--small">
-                                <li><a class="sidenav-link" href="">SASS</a></li>
-                                <li><a class="sidenav-link" href="">Tricks</a></li>
-                                <li><a class="sidenav-link" href="">Tutorials</a></li>
+                                <li><a class="sidenav-link" href="#selectors">Selectors</a></li>
+                                <li><a class="sidenav-link" href="#csstutorials">Tutorials</a></li>
                             </ul>
                         </li>
                         <hr>
                         <li class="sidenav-listitem">
-                            <a href="" class="sidenav-link">JS</a>
+                            <a href="#section3" class="sidenav-link sidenav-toplink" data-number="3">JS</a>
                             <ul class="sidenav-list sidenav-list--small">
-                                <li><a class="sidenav-link" href="">Documentation</a></li>
-                                <li><a class="sidenav-link" href="">Libraries</a></li>
-                                <li><a class="sidenav-link" href="">Plugins</a></li>
+                                <li><a class="sidenav-link" href="#libraries">Libraries</a></li>
+                                <li><a class="sidenav-link" href="#jstutorials">Tutorials</a></li>
                             </ul>
-                        </li>
-                        <hr>
-                        <li class="sidenav-listitem">
-                            <a href="" class="sidenav-link">PHP</a>
-                        </li>
-                        <hr>
-                        <li class="sidenav-listitem">
-                            <a href="" class="sidenav-link">Wordpress</a>
                         </li>
                     </ul>
                 </nav>
             </aside>
-            <section id="section1" class="wrapper-inner">
-                <h2 class="firstitem heading--blue">Sublime Text</h2>
-                <h3>Packages</h3>
-                <h4 class="text--blue"><a class="link" href="">Sublime Linter</a></h4>
+            <section id="section1" class="wrapper-inner article-section">
+                <h2 class="firstitem heading--blue">HTML</h2>
+                <h3 id="html5tags">HTML5 Tags</h3>
+                <p class="text">These are the HTML5 tags I think are most frequently used. A complete list of elements can be found at:</p>
+                <h4 class="text--blue"><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla's HTML element reference</a></h4>
+                <table class="codeblock">
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;header&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Defines the header of the page or section. Often contains the logo, the title or the navigation.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;footer&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Defines the footer of a page or section.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;nav&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">A section with navigation links.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;article&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Represents content, which is intended to be used independently. Each <code>&lt;article&gt;</code> should be identified (using a heading).</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;section&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Represents a generic section of a document. Each <code>&lt;section&gt;</code> should be identified (using a heading).</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;aside&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Respresents content, which is not necessary to understand the rest of the content.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;main&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Defines the main content of the page. It must be unique for this page and can be used only once per page.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;figure&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">An image, a diagram or a code snippet, many times with a <code>&lt;figcaption&gt;</code>. It's position is independent of the main flow.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>&lt;svg&gt;</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Defines included vector graphics.</td>
+                    </tr>
+                </table>
+                <h3 id="html5tutorials">Tutorials</h3>
                 <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <h4 class="text--blue"><a class="link" href="">Packet Highlighter</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://learn.shayhowe.com/html-css/getting-to-know-html/">Getting to know HTML</a></h4>
+                <h4 class="text--blue"><a class="link" href="https://developer.mozilla.org/en-US/Learn/HTML">HTML - Learning the Web</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://diveintohtml5.info/index.html">Dive Into HTML5</a></h4>
+            </section>
+            <section id="section2" class="wrapper-inner article-section">
+                <h2 class="heading--blue">CSS</h2>
+                <h3 id="selectors">Selectors</h3>
+                <p class="text">The following list shows some very useful CSS selectors.</p>
+                <table class="codeblock">
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>x + y</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">The adjacent selector will select only the element that is immediately prededed by the former element.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>x ~ y</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">This symbol targets every following sibling of an element.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>x[attr]</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">The attribute selector targets every element having a specific attribute.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>x:not(selector)</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">The negation pseudo class selects every element except for the one specified.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--blue"><code>x:nth-child(n)</code></td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">This selector is used to target specific elements in a stack.</td>
+                    </tr>
+                </table>
+                <h3 id="csstutorials">Tutorials</h3>
+                <h4 class="text--blue"><a class="link" href="http://tympanus.net/codrops/css_reference/">Codrops CSS Reference</a></h4>
+                <p class="text">This is a great CSS Reference, including all properties, pseudo-classes and functions.</p>
+                <h4 class="text--blue"><a class="link" href="http://learn.shayhowe.com/html-css/getting-to-know-css/">Getting to know CSS</a></h4>
+                <h4 class="text--blue"><a class="link" href="https://developer.mozilla.org/en-US/Learn/CSS">CSS - Learning the Web</a></h4>
+                <h4 class="text--blue"><a class="link" href="https://robots.thoughtbot.com/css-animation-for-beginners">CSS Animation</a></h4>
+                <h4 class="text--blue"><a class="link" href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties">A Visual Guide to CSS3 Flexbox Properties</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://www.chriswrightdesign.com/experiments/using-flexbox-today/">Using Flexbox Today</a></h4>
+            </section>
+            <section id="section3" class="wrapper-inner article-section">
+                <h2 class="heading--blue">JavaScript</h2>
+                <h3 id="libraries">Libraries</h3>
+                <h4 class="text--blue"><a class="link" href="http://jquery.com/">jQuery</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://bouncejs.com/">Bounce.js</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://clubdesign.github.io/floatlabels.js/">Floatlabels.js</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://dynamicsjs.com/">Dynamics.js</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://github.hubspot.com/pace/docs/welcome/">Pace.js</a></h4>
+                <h3 id="jstutorials">Tutorials</h3>
                 <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <h3>Shortcuts</h3>
-                <div class="codeblock">
-                    <div class="codeblock-row">
-                        <p class="codeblock-code codeblock-code--short codeblock-code--blue">Strg + Shift + D</p>
-                        <p class="codeblock-code codeblock-code--wide lastitem">Copy and paste the current line</p>
-                    </div>
-                    <div class="codeblock-row">
-                        <p class="codeblock-code codeblock-code--short codeblock-code--blue">Strg + Shift + G</p>
-                        <p class="codeblock-code codeblock-code--wide lastitem">Wrap the current selection with an HTML-Tag</p>
-                    </div>
-                    <div class="codeblock-row">
-                        <p class="codeblock-code codeblock-code--short codeblock-code--blue">Alt + .</p>
-                        <p class="codeblock-code codeblock-code--wide lastitem">Close the preceding open tag</p>
-                    </div>
-                </div>
+                <h4 class="text--blue"><a class="link" href="http://jstherightway.org/">JavaScript The Right Way</a></h4>
+                <h4 class="text--blue"><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">A re-introduction to JavaScript</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://www.tutorialspoint.com/javascript/index.htm">Tutorialspoint</a></h4>
+                <h4 class="text--blue"><a class="link" href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">JavaScript Design Patterns</a></h4>
             </section>
         </article>
 

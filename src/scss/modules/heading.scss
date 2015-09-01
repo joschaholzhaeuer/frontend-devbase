@@ -34,11 +34,3 @@ STYLESHEET: HEADING
         padding-bottom: 0;
     }
 }
-
-@include medium {
-    .heading {
-
-        &-text {
-        }
-    }
-}

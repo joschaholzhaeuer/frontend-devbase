@@ -9,6 +9,7 @@ $(document).ready(function() {
 
     var contentSections    = $('.article-section'),
         navigationItems    = $('.sidenav-toplink'),
+        navigationItemsSec = $('.sidenav-toplink a'),
         navigationItemsAll = $('.sidenav-link'),
         navigation         = $('.sidenav'),
         sectionFirst       = $('#section1');

@@ -10,6 +10,7 @@ h4,
 h5,
 h6 {
     font-family: $heading-font;
+    font-weight: bold;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h2 {
     margin-bottom: $medium-margin;
     margin-top: 100px;
     color: $white;
-    padding: $small-padding $medium-padding;
+    padding: $medium-padding;
     text-align: center;
 }
 
@@ -50,7 +51,7 @@ h2 {
 @include large {
     h2 {
         @include fontsize-20;
-        margin-top: 100px;
+        margin-top: 120px;
     }
 }
 
@@ -108,6 +109,7 @@ p {
 
 .text {
     margin-bottom: $medium-margin;
+    color: $grey-dark;
 
     &-pt {
         margin-top: $medium-margin;
@@ -135,6 +137,7 @@ p {
         margin-bottom: 0;
         font-family: $link-font;
         @include fontsize-7;
+        color: $grey;
     }
 }
 

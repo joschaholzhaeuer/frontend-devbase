@@ -59,3 +59,8 @@ textarea {
 aside {
     position: relative;
 }
+
+code {
+    font-family: $code-font;
+    @include fontsize-9;
+}
