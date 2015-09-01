@@ -60,6 +60,11 @@ aside {
     position: relative;
 }
 
+pre {
+    border-left: 10px solid $red;
+    overflow-x: auto;
+}
+
 code {
     font-family: $code-font;
     @include fontsize-9;

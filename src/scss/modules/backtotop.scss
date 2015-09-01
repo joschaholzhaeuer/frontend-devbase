@@ -39,8 +39,8 @@ STYLESHEET: BACKTOTOP
 
     &.cd-fade-out {
         visibility: visible;
-        opacity: 1;
-        background-color: $grey-light;
+        opacity: 0.3;
+        background-color: $grey;
         -webkit-transition: background-color .3s 0s, visibility 0s 0s;
         -moz-transition: background-color .3s 0s, visibility 0s 0s;
         transition: background-color .3s 0s, visibility 0s 0s;

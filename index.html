@@ -43,58 +43,142 @@
                         <li class="sidenav-listitem">
                             <a href="#section1" class="sidenav-link sidenav-toplink firstitem" data-number="1">Sublime Text</a>
                             <ul class="sidenav-list sidenav-list--small">
-                                <li><a class="sidenav-link" href="">Packages</a></li>
-                                <li><a class="sidenav-link" href="">Shortcuts</a></li>
-                                <li><a class="sidenav-link" href="">Color Scheme</a></li>
+                                <li><a class="sidenav-link" href="#packages">Packages</a></li>
+                                <li><a class="sidenav-link" href="#shortcuts">Shortcuts</a></li>
+                                <li><a class="sidenav-link" href="#settings">Settings</a></li>
                             </ul>
                         </li>
                         <hr>
                         <li class="sidenav-listitem">
-                            <a href="" class="sidenav-link sidenav-toplink" data-number="2">Boilerplate</a>
+                            <a href="#section2" class="sidenav-link sidenav-toplink" data-number="2">Boilerplate</a>
                             <ul class="sidenav-list sidenav-list--small">
-                                <li><a class="sidenav-link" href="">Structure</a></li>
-                                <li><a class="sidenav-link" href="">Files</a></li>
-                                <li><a class="sidenav-link" href="">Mixins</a></li>
-                                <li><a class="sidenav-link" href="">Variables</a></li>
+                                <li><a class="sidenav-link" href="#structure">Structure</a></li>
+                                <li><a class="sidenav-link" href="#gruntfile">Gruntfile</a></li>
                             </ul>
                         </li>
                         <hr>
-                        <li class="sidenav-listitem sidenav-toplink" data-number="3">
-                            <a href="" class="sidenav-link">Mamp</a>
-                        </li>
-                        <hr>
-                        <li class="sidenav-listitem sidenav-toplink" data-number="4">
-                            <a href="" class="sidenav-link">Git</a>
-                        </li>
-                        <hr>
-                        <li class="sidenav-listitem sidenav-toplink" data-number="5">
-                            <a href="" class="sidenav-link">Grunt</a>
+                        <li class="sidenav-listitem">
+                            <a href="#section3" class="sidenav-link sidenav-toplink" data-number="3">Grunt</a>
                         </li>
                     </ul>
                 </nav>
             </aside>
             <section id="section1" class="wrapper-inner article-section">
                 <h2 class="firstitem heading--red">Sublime Text</h2>
-                <h3>Packages</h3>
-                <h4 class="text--red"><a class="link" href="">Sublime Linter</a></h4>
-                <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <h4 class="text--red"><a class="link" href="">Packet Highlighter</a></h4>
-                <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <h3>Shortcuts</h3>
+                <h3 id="packages">Packages</h3>
+                <p class="text">These are the packages I find the most useful. Package Control makes them easy to install and improves your workflow by a lot.</p>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/">Package Control</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/Emmet">Emmet</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/SideBarEnhancements">Sidebar Enhancements</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/BracketHighlighter">Bracket Highlighter</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/Alignment">Alignment</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/Git">Git</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/SCSS">SCSS</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/AutoFileName">AutoFileName</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/AdvancedNewFile">Advanced New File</a></h4>
+                <h3 id="shortcuts">Shortcuts</h3>
+                <p class="text">Here are some very useful shortcuts I use all the time.</p>
                 <table class="codeblock">
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">Strg + Shift + D</td>
-                        <td class="codeblock-code codeblock-code--wide lastitem">Copy and paste the current line</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Copy and paste the current line.</td>
                     </tr>
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">Strg + Shift + G</td>
-                        <td class="codeblock-code codeblock-code--wide lastitem">Wrap the current selection with an HTML-Tag</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Wrap the current selection with an HTML-Tag.</td>
                     </tr>
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">Alt + .</td>
-                        <td class="codeblock-code codeblock-code--wide lastitem">Close the preceding open tag</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Close the preceding open tag.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">Strg + K, Strg + B</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Show/hide the sidebar.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">Strg + D</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Find and expand the current selection.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">Strg + Shift + V</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Paste and indent.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">Strg + Shift + Up/Down</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Move the current line/selection up/down.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">Strg + G</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Jump to a specific line number.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">Strg + P</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Go to a specific File.</td>
                     </tr>
                 </table>
+                <h3 id="settings">Settings</h3>
+                <p class="text">These are some of the user settings I added under Preferences &gt; Settings - User.</p>
+                <table class="codeblock">
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"bold_folder_labels"</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">The folder labels in your sidebar are displayed in bold, making them more distinguishable from the files.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"highlight_modified_tabs"</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Highlight tabs that have not been saved yet.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"scroll_past_end"</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Enables you to scroll past the last line of your file.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"match_brackets"</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Match your open bracket directly with a closing one while typing.</td>
+                    </tr>
+                </table>
+                <p class="text">And here's the theme I use. It's a flat theme that comes with a nice color scheme as well:</p>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/Theme%20-%20Spacegray">Theme Spacegray</a></h4>
+            </section>
+            <section id="section2" class="wrapper-inner article-section">
+                <h2 class="heading--red">Boilerplate</h2>
+                <p class="text">The boilerplate I use is based on the HTML5 boilerplate. I modified it and added my personal folder structure to suit my needs. It is available on Github.</p>
+                <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate/tree/dev">Basic Boilerplate</a></h4>
+                <h3 id="structure">Structure</h3>
+                <p class="text">Working with Grunt and trying to use a meaningful CSS naming and structuring methodology I came up with this folder structure.</p>
+                <p class="text">The "src" folder is for development only, where you can find all of the SCSS code, uncompressed JavaScript and uncompressed images or placeholders you used for development.</p>
+                <p class="text">The "dist" folder is the one you upload on a server when deploying your project. Here are all minified and compressed files and images, automatically created by my Grunt setup.</p>
+                <p class="text">Here you can read more about CSS naming methodologies:</p>
+                <h4 class="text--red"><a class="link" href="https://smacss.com/">SMACCS</a></h4>
+                <h4 class="text--red"><a class="link" href="https://en.bem.info/method/naming-convention/">BEM</a></h4>
+                <h3 id="gruntfile">Gruntfile</h3>
+                <p class="text">This is how my Gruntfile.js looks like.</p>
+                <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate/blob/dev/Gruntfile.js">Gruntfile.js</a></h4>
+                <p class="text text-pt">It does my SCSS preprocessing, hints mistakes in my JavaScript code, minifies it all and puts it in the "dist/css" and "dist/js" folders. The only thing I have to do when I start coding is to navigate to my project folder and type "Grunt" in the command line.</p>
+            </section>
+            <section id="section3" class="wrapper-inner article-section">
+                <h2 class="heading--red">Grunt</h2>
+                <p class="text">These are the steps for installing Grunt when using my basic boilerplate:</p>
+                <table class="codeblock">
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install -g grunt -cli</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Install the grunt command line interface globally on your pc.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">npm init</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Go to your project folder and create a package.json file.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install -S grunt</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Install the grunt dev dependendy.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Install all dev dependencies specified in your package.json file.</td>
+                    </tr>
+                </table>
+                <p class="text">For any further information go to the Grunt website or follow this great tutorial:</p>
+                <h4 class="text--red"><a class="link" href="http://mattbailey.io/a-beginners-guide-to-grunt-redux/">Beginners Guide to Grunt</a></h4>
+                <h4 class="text--red"><a class="link" href="http://gruntjs.com/getting-started">Grunt Website</a></h4>
             </section>
         </article>
 
