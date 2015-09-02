@@ -15,6 +15,7 @@ STYLESHEET: NAV
         font-family: $link-font;
         font-weight: bold;
         color: $grey;
+        margin-top: 6px;
 
         &-list {
             @include fontsize-12;
@@ -79,15 +80,15 @@ STYLESHEET: NAV
             .sidenav-link {
 
                 &:hover {
-                    color: $purple;
+                    color: $yellow;
                 }
 
                 &.is-selected {
-                    color: $purple;
+                    color: $yellow;
                 }
 
                 &.is-selected + ul a {
-                    color: $purple;
+                    color: $yellow;
                 }
             }
         }

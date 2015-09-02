@@ -28,7 +28,7 @@ STYLESHEET: CODE
         }
 
         &--purple {
-            color: $purple;
+            color: $yellow;
         }
 
         &--cyan {
@@ -37,6 +37,13 @@ STYLESHEET: CODE
 
         &--short {
             font-family: $code-font;
+        }
+
+        &--inline {
+            background-color: $grey-light;
+            color: $grey-dark;
+            padding: 2px 7px;
+            @include fontsize-9;
         }
     }
 }
@@ -53,7 +60,7 @@ STYLESHEET: CODE
 
         &-code {
             display: table-cell;
-            padding: 25px;
+            padding: 20px 25px;
 
             &--short {
                 width: 30%;
@@ -64,6 +71,10 @@ STYLESHEET: CODE
             &--wide {
                 width: 70%;
                 border-bottom: $small-margin solid $white;
+                @include fontsize-10;
+            }
+
+            &--inline {
                 @include fontsize-10;
             }
         }

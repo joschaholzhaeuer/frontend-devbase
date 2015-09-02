@@ -82,12 +82,12 @@ STYLESHEET: NAV
             }
         }
 
-        &--purple {
+        &--yellow {
 
             &:hover {
 
                 &::after {
-                    border-bottom: 10px solid $purple;
+                    border-bottom: 10px solid $yellow;
                     bottom: -1px;
                 }
             }
@@ -95,7 +95,7 @@ STYLESHEET: NAV
             &--active {
 
                 &::after {
-                    border-bottom: 10px solid $purple;
+                    border-bottom: 10px solid $yellow;
                     bottom: -1px;
                 }
             }

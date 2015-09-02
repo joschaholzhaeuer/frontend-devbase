@@ -21,4 +21,11 @@ STYLESHEET: LINKS
         color: inherit;
         text-decoration: underline;
     }
+
+    &-sect {
+        color: $grey-light;
+        margin-left: -40px;
+        margin-right: 14px;
+        text-decoration: none;
+    }
 }

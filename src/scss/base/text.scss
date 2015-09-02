@@ -37,20 +37,20 @@ h1 {
 h2 {
     margin-bottom: $medium-margin;
     margin-top: 100px;
-    color: $white;
-    padding: $medium-padding;
-    text-align: center;
+    color: $grey-dark;
+    @include fontsize-20;
+
 }
 
 @include medium {
     h2 {
-        @include fontsize-18;
+        @include fontsize-22;
     }
 }
 
 @include large {
     h2 {
-        @include fontsize-20;
+        @include fontsize-24;
         margin-top: 120px;
     }
 }
@@ -58,7 +58,7 @@ h2 {
 h3 {
     margin-bottom: $small-margin;
     margin-top: $large-margin;
-    color: $grey;
+    color: $grey-dark;
 
     &::after {
         content: "";
@@ -124,8 +124,8 @@ p {
         color: $blue;
     }
 
-    &--purple {
-        color: $purple;
+    &--yellow {
+        color: $yellow;
     }
 
     &--cyan {

@@ -64,9 +64,9 @@
                 </nav>
             </aside>
             <section id="section1" class="wrapper-inner article-section">
-                <h2 class="firstitem heading--red">Sublime Text</h2>
+                <h2 class="firstitem"><a href="#section1" class="link-sect">&sect;</a>Sublime Text</h2>
                 <h3 id="packages">Packages</h3>
-                <p class="text">These are the packages I find the most useful. Package Control makes them easy to install and improves your workflow by a lot.</p>
+                <p class="text">These are the packages I find the most useful. <code class="codeblock-code--inline">Package Control</code> makes them easy to install and improves your workflow by a lot.</p>
                 <h4 class="text--red"><a class="link" href="https://packagecontrol.io/">Package Control</a></h4>
                 <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/Emmet">Emmet</a></h4>
                 <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/SideBarEnhancements">Sidebar Enhancements</a></h4>
@@ -117,7 +117,7 @@
                     </tr>
                 </table>
                 <h3 id="settings">Settings</h3>
-                <p class="text">These are some of the user settings I added under Preferences &gt; Settings - User.</p>
+                <p class="text">These are some of the user settings I added under <code class="codeblock-code--inline">Preferences &gt; Settings-User</code>.</p>
                 <table class="codeblock">
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">"bold_folder_labels"</td>
@@ -140,23 +140,24 @@
                 <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/Theme%20-%20Spacegray">Theme Spacegray</a></h4>
             </section>
             <section id="section2" class="wrapper-inner article-section">
-                <h2 class="heading--red">Boilerplate</h2>
+                <h2><a href="#section2" class="link-sect">&sect;</a>Boilerplate</h2>
                 <p class="text">The boilerplate I use is based on the HTML5 boilerplate. I modified it and added my personal folder structure to suit my needs. It is available on Github.</p>
                 <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate/tree/dev">Basic Boilerplate</a></h4>
                 <h3 id="structure">Structure</h3>
-                <p class="text">Working with Grunt and trying to use a meaningful CSS naming and structuring methodology I came up with this folder structure.</p>
-                <p class="text">The "src" folder is for development only, where you can find all of the SCSS code, uncompressed JavaScript and uncompressed images or placeholders you used for development.</p>
-                <p class="text">The "dist" folder is the one you upload on a server when deploying your project. Here are all minified and compressed files and images, automatically created by my Grunt setup.</p>
+                <p class="text">Working with Grunt and trying to use a meaningful CSS naming and structuring methodology I came up with the following folder structure:</p>
+                <img class="article-img" src="src/img/boilerplate_folder_structure.png" alt="Folder Structure">
+                <p class="text">The <code class="codeblock-code--inline">src</code> folder is for development only, where you can find all of the SCSS code, uncompressed JavaScript and uncompressed images or placeholders you've been using for development.</p>
+                <p class="text">The <code class="codeblock-code--inline">dist</code> folder is the one you upload on a server when deploying your project. Here are all minified and compressed files and images, automatically created by Grunt.</p>
                 <p class="text">Here you can read more about CSS naming methodologies:</p>
                 <h4 class="text--red"><a class="link" href="https://smacss.com/">SMACCS</a></h4>
                 <h4 class="text--red"><a class="link" href="https://en.bem.info/method/naming-convention/">BEM</a></h4>
                 <h3 id="gruntfile">Gruntfile</h3>
-                <p class="text">This is how my Gruntfile.js looks like.</p>
+                <p class="text">This is how my <code class="codeblock-code--inline">Gruntfile.js</code> looks like.</p>
                 <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate/blob/dev/Gruntfile.js">Gruntfile.js</a></h4>
-                <p class="text text-pt">It does my SCSS preprocessing, hints mistakes in my JavaScript code, minifies it all and puts it in the "dist/css" and "dist/js" folders. The only thing I have to do when I start coding is to navigate to my project folder and type "Grunt" in the command line.</p>
+                <p class="text text-pt">It does my SCSS preprocessing, hints mistakes in my JavaScript code, minifies it all and puts the output in the <code class="codeblock-code--inline">dist/css</code> and <code class="codeblock-code--inline">dist/js</code> folders. The only thing I have to do when I start coding is to navigate to the project folder and type <code class="codeblock-code--inline">grunt</code> or <code class="codeblock-code--inline">grunt watch</code> in the command line.</p>
             </section>
             <section id="section3" class="wrapper-inner article-section">
-                <h2 class="heading--red">Grunt</h2>
+                <h2><a href="#section3" class="link-sect">&sect;</a>Grunt</h2>
                 <p class="text">These are the steps for installing Grunt when using my basic boilerplate:</p>
                 <table class="codeblock">
                     <tr class="codeblock-row">
@@ -165,7 +166,7 @@
                     </tr>
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">npm init</td>
-                        <td class="codeblock-code codeblock-code--wide lastitem">Go to your project folder and create a package.json file.</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Go to your project folder and create a <code>package.json</code> file.</td>
                     </tr>
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install -S grunt</td>
@@ -173,7 +174,7 @@
                     </tr>
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install</td>
-                        <td class="codeblock-code codeblock-code--wide lastitem">Install all dev dependencies specified in your package.json file.</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Install all dev dependencies specified in your <code>package.json</code> file.</td>
                     </tr>
                 </table>
                 <p class="text">For any further information go to the Grunt website or follow this great tutorial:</p>

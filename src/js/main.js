@@ -20,6 +20,7 @@ $(document).ready(function() {
         navigationItemsSec = $('.sidenav-toplink a'),
         navigationItemsAll = $('.sidenav-link'),
         navigation         = $('.sidenav'),
+        linkSect           = $('.link-sect'),
         sectionFirst       = $('#section1');
 
     if ( $(window).width() > 1361 ) {
@@ -35,6 +36,11 @@ $(document).ready(function() {
 
     //smooth scroll to the section
     navigationItemsAll.on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
+    });
+
+    linkSect.on('click', function(event){
         event.preventDefault();
         smoothScroll($(this.hash));
     });
@@ -57,10 +63,18 @@ $(document).ready(function() {
     function scrollNavigation() {
         var winOffset = $(window).scrollTop(),
             secOffset = sectionFirst.offset().top,
-            navOffset = winOffset - secOffset + 100;
+            navOffset = winOffset - secOffset + 100,
+            footerOffset = $('.footer').offset().top -764,
+            highestNavTop = footerOffset - navigation.height();
 
         if ( winOffset > ( secOffset - 100) ) {
-            navigation.css('top', navOffset);
+
+            if ( $('.sidenav-utilities').length && ( navOffset + navigation.height() ) > footerOffset ) {
+                navigation.css('top', highestNavTop);
+
+            } else {
+                navigation.css('top', navOffset);
+            }
 
         } else {
             navigation.css('top', 0);
