@@ -28,5 +28,8 @@ STYLESHEET: GRID
     color: $white;
     background-color: $black;
     text-align: center;
-    margin-top: 100px;
+
+    &-article {
+        margin-top: 100px;
+    }
 }
