@@ -137,8 +137,9 @@ p {
         padding-bottom: $medium-padding;
         margin-bottom: 0;
         font-family: $link-font;
+        font-weight: bold;
         @include fontsize-7;
-        color: $grey;
+        //color: $grey;
     }
 }
 

@@ -28,8 +28,20 @@ STYLESHEET: GRID
     color: $white;
     background-color: $black;
     text-align: center;
+    position: relative;
+    padding-top: 50px;
 
     &-article {
         margin-top: 100px;
+    }
+
+    &-logo {
+        display: block;
+        margin: 0 auto;
+        //position: absolute;
+        //left: 50%;
+        //margin-left: -15px;
+        //top: $medium-margin;
+        width: 200px;
     }
 }
