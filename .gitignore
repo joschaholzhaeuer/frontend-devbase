@@ -2,3 +2,7 @@
 node_modules/
 *.sublime-project
 *.sublime-workspace
+gruntfile.js
+dist/css/**
+dist/js/**
+dist/*.html
