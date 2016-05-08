@@ -2,11 +2,11 @@ module.exports = function(grunt) {
 
 
   var cssSources = [
-    'src/scss/*.scss',
-    'src/scss/modules/*.scss',
-    'src/scss/states/*.scss',
-    'src/scss/base/*.scss',
-    'src/scss/layout/*.scss'
+    'src/scss/**/*.scss'
+  ];
+
+  var htmlSources = [
+    'src/*.html'
   ];
 
 
@@ -43,12 +43,41 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          style: 'compressed',
+          style: 'expanded',
           sourcemap: 'none'
         },
         files: {
           'dist/css/style.css': 'src/scss/style.scss'
         }
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          'dist/index.html': 'src/index.html',
+          'dist/blogs.html': 'src/blogs.html',
+          'dist/code.html': 'src/code.html',
+          'dist/utilities.html': 'src/utilities.html',
+          'dist/404.html': 'src/404.html'
+        }
+      }
+    },
+    postcss: {
+      options: {
+        map: false,
+        processors: [
+          require('pixrem')(),                                    // add fallbacks for rem units
+          require('autoprefixer')({browsers: 'last 4 versions'}), // add vendor prefixes
+          require('cssnano')()                                    // minify the result
+        ]
+      },
+      dist: {
+        src: 'dist/css/style.css',
+        dest: 'dist/css/style.min.css'
       }
     },
     watch: {
@@ -61,13 +90,14 @@ module.exports = function(grunt) {
       },
       css: {
         files: cssSources,
-        tasks: ['sass'],
+        tasks: ['sass', 'postcss'],
         options: {
           livereload: true,
         }
       },
       html: {
-        files: ['*.html'],
+        files: htmlSources,
+        tasks: ['htmlmin'],
         options: {
           livereload: true,
         }
@@ -80,6 +110,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-postcss');
 
   grunt.registerTask('default', ['watch']);
 

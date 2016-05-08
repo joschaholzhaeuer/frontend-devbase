@@ -27,8 +27,8 @@
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="dist/css/style.css">
-        <script src="dist/js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="css/style.min.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -62,6 +62,7 @@
                                 <li><a class="sidenav-link" href="#packages">Packages</a></li>
                                 <li><a class="sidenav-link" href="#shortcuts">Shortcuts</a></li>
                                 <li><a class="sidenav-link" href="#settings">Settings</a></li>
+                                <li><a class="sidenav-link" href="#theme">Theme</a></li>
                             </ul>
                         </li>
                         <hr>
@@ -92,8 +93,9 @@
                 <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/SCSS">SCSS</a></h4>
                 <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/AutoFileName">AutoFileName</a></h4>
                 <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/AdvancedNewFile">Advanced New File</a></h4>
+                <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/ColorPicker">Color Picker</a></h4>
                 <h3 id="shortcuts">Shortcuts</h3>
-                <p class="text">Here are some very useful shortcuts I use all the time. I'm working on Windows, but for Mac they should be about the same when using <code class="codeblock-code--inline">&#x2318;</code> instead of <code class="codeblock-code--inline">Ctrl</code>.</p>
+                <p class="text">Here are some very useful shortcuts I use all the time. I'm working on Windows, but for Mac they should be about the same when using <code class="codeblock-code--inline">Cmd</code> instead of <code class="codeblock-code--inline">Ctrl</code>.</p>
                 <table class="codeblock">
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">Ctrl + Shift + D</td>
@@ -131,46 +133,67 @@
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">Ctrl + P</td>
                         <td class="codeblock-code codeblock-code--wide lastitem">Go to a specific File.</td>
                     </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">Ctrl + L</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Select line.</td>
+                    </tr>
                 </table>
                 <h3 id="settings">Settings</h3>
                 <p class="text">These are some of the user settings I added under <code class="codeblock-code--inline">Preferences &gt; Settings-User</code>.</p>
                 <table class="codeblock">
                     <tr class="codeblock-row">
-                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"bold_folder_labels"</td>
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"bold_folder_labels": true</td>
                         <td class="codeblock-code codeblock-code--wide lastitem">The folder labels in your sidebar are displayed in bold, making them more distinguishable from the files.</td>
                     </tr>
                     <tr class="codeblock-row">
-                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"highlight_modified_tabs"</td>
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"highlight_modified_&#8203;tabs": true</td>
                         <td class="codeblock-code codeblock-code--wide lastitem">Highlight tabs that have not been saved yet.</td>
                     </tr>
                     <tr class="codeblock-row">
-                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"scroll_past_end"</td>
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"scroll_past_end": true</td>
                         <td class="codeblock-code codeblock-code--wide lastitem">Enables you to scroll past the last line of your file.</td>
                     </tr>
                     <tr class="codeblock-row">
-                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"match_brackets"</td>
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"match_brackets": true</td>
                         <td class="codeblock-code codeblock-code--wide lastitem">Match your open bracket directly with a closing one while typing.</td>
                     </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"tab_size": 4</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">This underlines your indentations a bit more.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"trim_trailing_white_&#8203;space_on_save": true</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Your whitespaces will be trimmed on save.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">"folder_exclude_patterns": [".sass-cache", "node_modules", ".git"]</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">This will ignore some folders and files when pressing Ctrl+P to search for a file.</td>
+                    </tr>
                 </table>
-                <p class="text">And here's the theme I use. It's a flat theme that comes with a nice color scheme as well:</p>
+                <h3 id="theme">Theme</h3>
+                <p class="text">Here's the theme I use. It's a flat theme that comes with a nice color scheme as well:</p>
                 <h4 class="text--red"><a class="link" href="https://packagecontrol.io/packages/Theme%20-%20Spacegray">Theme Spacegray</a></h4>
+                <p class="text text-pt">And my color scheme. I modified the base-16 color scheme, you can find it here:</p>
+                <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate/blob/master/sublime_text/base16_modified.tmTheme">Color Scheme</a></h4>
             </section>
             <section id="section2" class="wrapper-inner article-section">
                 <h2><a href="#section2" class="link-sect">&sect;</a>Boilerplate</h2>
                 <p class="text">The boilerplate I use is based on the HTML5 boilerplate. I modified it and added my personal folder structure to suit my needs. It is available on Github.</p>
-                <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate/tree/dev">Basic Boilerplate</a></h4>
+                <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate">Basic Boilerplate</a></h4>
                 <h3 id="structure">Structure</h3>
                 <p class="text">Working with Grunt and trying to use a meaningful CSS naming and structuring methodology I came up with the following folder structure:</p>
-                <img class="article-img" src="dist/img/boilerplate_folder_structure.png" alt="Folder Structure">
+                <img class="article-img" src="img/boilerplate_folder_structure.png" alt="Folder Structure">
                 <p class="text">The <code class="codeblock-code--inline">src</code> folder is for development only, where you can find all of the SCSS code, uncompressed JavaScript and uncompressed images or placeholders used for development.</p>
                 <p class="text">The <code class="codeblock-code--inline">dist</code> folder is the one you upload on a server when deploying your project. Here are all minified and compressed files and images, automatically created by Grunt.</p>
+                <p class="text"><span class="text--bold">Note:</span> When creating a new <code class="codeblock-code--inline">*.html</code> file in the <code class="codeblock-code--inline">src</code> folder, you have to edit the <code class="codeblock-code--inline">Grundfile.js</code>. Simply add your new file under <code class="codeblock-code--inline">htmlmin &gt; files</code>:</p>
+                <img class="article-img" src="img/gruntfile_htmlmin.png" alt="Gruntfile htmlmin-section">
                 <p class="text">Here you can read more about CSS naming methodologies:</p>
                 <h4 class="text--red"><a class="link" href="https://smacss.com/">SMACCS</a></h4>
                 <h4 class="text--red"><a class="link" href="https://en.bem.info/method/naming-convention/">BEM</a></h4>
                 <h3 id="gruntfile">Gruntfile</h3>
                 <p class="text">This is how my <code class="codeblock-code--inline">Gruntfile.js</code> looks like.</p>
-                <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate/blob/dev/Gruntfile.js">Gruntfile.js</a></h4>
-                <p class="text text-pt">It does my SCSS preprocessing, hints mistakes in my JavaScript code, minifies it all and puts the output in the <code class="codeblock-code--inline">dist/css</code> and <code class="codeblock-code--inline">dist/js</code> folders. The only thing I have to do when I start coding is to navigate to the project folder and type <code class="codeblock-code--inline">grunt</code> or <code class="codeblock-code--inline">grunt watch</code> in the command line.</p>
+                <h4 class="text--red"><a class="link" href="https://github.com/joschaholzhaeuer/basic_boilerplate/blob/master/Gruntfile.js">Gruntfile.js</a></h4>
+                <p class="text text-pt">It handles the SCSS preprocessing, hints mistakes in my JavaScript code, minifies the HTML, CSS and JavaScript and puts the output in the <code class="codeblock-code--inline">dist/</code>, <code class="codeblock-code--inline">dist/css</code> and <code class="codeblock-code--inline">dist/js</code> folders. The only thing I have to do when I start coding is to navigate to the project folder and type <code class="codeblock-code--inline">grunt</code> or <code class="codeblock-code--inline">grunt watch</code> in the command line.</p>
                 <p class="text">I switched to ConEmu as an alternative to the Windows Console, adding some really neat features like tabs and colors. It can be found here:</p>
                 <h4 class="text--red"><a class="link" href="https://conemu.github.io/">ConEmu</a></h4>
             </section>
@@ -179,12 +202,12 @@
                 <p class="text">These are the steps for installing Grunt when using my basic boilerplate:</p>
                 <table class="codeblock">
                     <tr class="codeblock-row">
-                        <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install -g grunt -cli</td>
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install -g grunt-cli</td>
                         <td class="codeblock-code codeblock-code--wide lastitem">Install the grunt command line interface globally on your pc.</td>
                     </tr>
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">npm init</td>
-                        <td class="codeblock-code codeblock-code--wide lastitem">Go to your project folder and create a <code>package.json</code> file.</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Go to your project folder and create a <code>package.json</code> file (not needed when using my boilerplate).</td>
                     </tr>
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install -S grunt</td>
@@ -192,7 +215,11 @@
                     </tr>
                     <tr class="codeblock-row">
                         <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install</td>
-                        <td class="codeblock-code codeblock-code--wide lastitem">Install all dev dependencies specified in your <code>package.json</code> file.</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Install the dev dependencies specified in your <code>package.json</code> file.</td>
+                    </tr>
+                    <tr class="codeblock-row">
+                        <td class="codeblock-code codeblock-code--short codeblock-code--red">npm install grunt-postcss pixrem autoprefixer cssnano</td>
+                        <td class="codeblock-code codeblock-code--wide lastitem">Install the postcss plugins.</td>
                     </tr>
                 </table>
                 <p class="text">For any further information go to the Grunt website or follow this great tutorial:</p>
@@ -202,14 +229,14 @@
         </article>
 
         <footer class="footer footer-article">
-            <img src="dist/img/devbase_logo_full.svg" alt="Frontend Devbase Logo" class="footer-logo">
+            <img src="img/devbase_logo_full.svg" alt="Frontend Devbase Logo" class="footer-logo">
             <p class="text text-footer">&copy; Made with ❤ by <a href="http://joschaholzhaeuer.de" class="link" target="_blank">Joscha Holzhaeuer</a></p>
         </footer>
 
         <a href="#0" class="cd-top">Top</a>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="dist/js/scripts.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

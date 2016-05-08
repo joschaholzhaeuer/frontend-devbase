@@ -141,6 +141,10 @@ p {
         @include fontsize-7;
         //color: $grey;
     }
+
+    &--bold {
+        font-weight: 700;
+    }
 }
 
 @include medium {
