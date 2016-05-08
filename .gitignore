@@ -6,3 +6,6 @@ gruntfile.js
 dist/css/**
 dist/js/**
 dist/*.html
+
+# no need for local files
+index.php
