@@ -2,10 +2,9 @@
 node_modules/
 *.sublime-project
 *.sublime-workspace
-gruntfile.js
 dist/css/**
 dist/js/**
 dist/*.html
 
 # no need for local files
-index.php
+/index.php
